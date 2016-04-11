@@ -1,0 +1,203 @@
+<html>
+
+<title>
+    Oho
+</title>
+
+<head></head>
+
+<body>
+    <h1 style="text-align: center;">
+        <strong>Online Hobbies</strong>
+    </h1>
+<div style="text-align: center;">
+<strong>-Tehnologii Web-</strong></div>
+<div style="text-align: right;">
+Realizatori: Anghelache Oana</div>
+<div style="text-align: right;">
+Redinciuc Daniel-Ilie</div>
+<div style="text-align: right;">
+Dorneanu Marina</div>
+<div style="text-align: right;">
+Moisa Oana Maria</div>
+<ol>
+<li>
+            <h3>
+                <strong>Descriere</strong>
+            </h3>
+</li>
+</ol>
+<div style="text-align: justify;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Se doreste realizarea unei aplicatii Web cu caracter social menita sa permita utilizatorilor schimbul si
+        recomandarea de pasiuni (e.g., carti rare, filme de groaza, muzica sintetica, instrumente de pescuit etc.).
+        Fiecare pasiune va avea, dupa caz, o descriere corespunzatoare disponibila in formate multiple (text structurat,
+        imagini, video). Recomandarile efectuate de utilizatori (de genul "imi place S deoarece M") vor fi raspandite
+        via retele sociale, in afara comunitatii deja create in cadrul sistemului implementat. Grupurile de utilizatori
+        vor putea fi create automat conform pasiunilor comune. Pentru utilizatorii cu rol de administrator, sistemul
+        va genera rapoarte diverse -- disponibile in formate ca HTML, Atom, CSV si PDF -- despre cele mai
+        populare/rarisime pasiuni, (grupuri de) utilizatori avand minim P preocupari, evolutia pasiunilor intr-un
+        interval de timp etc.
+    </div>
+<ol start="2">
+<li>
+            <h3>
+                <strong>Tehnologii utilizate</strong>
+            </h3>
+</li>
+</ol>
+<div style="text-align: justify;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Partea de server a aplicatiei va fi realizata in php, pe partea de client
+            se va folosi HTML5, CSS3 si Javascript, iar pentru stocarea informatiilor vom folosi o baza de date MYSQL.
+        </div>
+<ol start="3">
+<li>
+            <h3>
+                <strong>Facilitati Aplicatie</strong>
+            </h3>
+</li>
+</ol>
+<div style="text-align: justify;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site-ul web va consta intr-o pagina principala
+        unde utilizatorul va putea sa se logheze sau sa isi creeze un cont nou.In functie de stare(logat/nelogat)
+        accesul la pagini secundare va fi restrictionat.Din starea "nelogat", un vizitator al site-ului
+        va avea la dispozitie butoanele: "login", pentru a introduce numele de utilizator si parola, si
+        "register", pentru a-si crea un cont nou pe site.Din starea "logat", utilizatorul va vedea si butoanele "Create Hobby",
+        pentru a face un request pt un nou hobby
+        si "Account", pentru a vizualiza informatiile referitoare la cont.<br /><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scopul site-ului este acela de a conecta virtual oameni
+        care impartasesc pasiuni comune, de aceea, utilizatorii pot vizualiza profilele celorlalti membri pentru a
+        le vedea pasiunile si grupurile din care fac parte.Un user se poate alatura unui grup pentru a impartasi pasiunea
+        sa cu persoane asemenea lui.Pe un astfel de grup, vor exista diverse topicuri, la care membrii grupului vor
+        putea sa comenteze, pentru a-si exprima opinia sau pentru a organiza intruniri tematice intre membri.
+
+    </div>
+<div style="text-align: justify;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pentru a evita dezordinea si haosul, am ales ca singurele persoane
+        care sa poate crea un hobby nou sa fie administratorii, pentru a nu se crea duplicate si hobby-uri false.De aceea,
+        utilizatorii nu pot sa faca altceva decat sa faca un request la admin pentru a adauga un hobby nou.In urma validarii,
+        administratorul va crea grupul si utilizatorii care indragesc respectivul hobby se pot alatura lui.
+    </div>
+<div style="text-align: justify;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O alta caracteristica a site-ului este aceea de a distribui un anumit
+        topic de pe un grup pe o retea sociala, altfel dand oportunitatea prietenilor userului conectat atat de a auzi de
+        "Online Hobbies" cat si de a discuta respectivul subiect, fie de pe site, fie prin comentarii la postul
+        distribuit.
+    </div>
+<div style="text-align: justify;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In sectiunea "Account", utilizatorii pot vizualiza informatii cu privire
+        la contul personal: numele de utilizator, apartenenta la grupuri, grupuri recomandatate, ultimele activitati, precum
+        alaturarea la grupuri noi, imprietenirea cu un alt membru, comentarii, etc.De asemenea, membrii cu drept
+        de administrator vor avea la dispozitie 4 butoane pentru generarea de rapoarte HTML, Atom, PDF si CSV.
+    </div>
+<div style="text-align: justify;">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site-ul ofera deasemenea si functionalitati de cautare automata a membrilor
+        existenti si a grupurilor existente, pentru a gasi mai repede informatiile cautate
+    </div>
+         <ol start="4">
+         <li>
+            <h3>
+                <strong>Arhitectura aplicatiei</strong>
+            </h3>
+         </li>
+         </ol>
+          <div style="text-align: center;">
+              Automat(retea Petri) ce descrie arhitectura aplicatiei:<br/><br/>
+          </div>
+          <a href="https://s26.postimg.org/ibdjhg2k9/use-case2.png">
+            <img src="https://s26.postimg.org/ibdjhg2k9/use-case2.png" style="cursor: pointer; display: block; height: 50%; margin-left: auto; margin-right: auto; width: 50%;" /><br /><br />
+          </a>
+
+         <ol start="5">
+           <li>
+            <h3>
+                <strong>Arhitectura bazei de date:</strong>
+            </h3>
+            <p style="text-align: center;">
+                Modelul ERD al bazei de date:
+            </p>
+            <a href="https://s26.postimg.org/5l9b4cum1/EntityDesignerDiagram.jpg">
+                <img src="https://s26.postimg.org/5l9b4cum1/EntityDesignerDiagram.jpg" style="cursor: pointer; display: block; height: 50%; margin-left: auto; margin-right: auto; width: 50%;"><br/><br/>
+            </a>
+</li>
+</ol>
+<ol start="6">
+<li>
+            <h3>
+                <strong>Etapele contruirii site-ului</strong><br/>
+            </h3>
+<div style="text-align: left;">
+                <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dupa formarea echipei, ne-am sfatuit cu privire la alegerea
+                unui proiect.Am ales "Online Hobbies" deoarece am cazut de acord ca este un proiect interesant si ar
+                fi foarte util realizarea unui astfel de site.
+                Am propus mai multe design-uri, realizate pe
+                <a href="https://moqups.com/">moqups.com</a> si am discutat despre alegerea unui design ce ar satisface
+                nevoile clientilor
+                din punct de vedere vizual(responsive) cat si intuitivitatea comenzilor.Apoi am impartit taskuri pentru
+                fiecare membru din echipa.<br />
+            </div>
+<div style="text-align: center;">
+                <strong>Designul ales a fost:</strong> <br /><br />
+                <a href="https://s26.postimg.org/h2pnvtam1/design1.png">
+                    <img src="https://s26.postimg.org/h2pnvtam1/design1.png" style="cursor: pointer; display: block; height: 50%; margin-left: auto; margin-right: auto; width: 50%;" /><br/>
+                </a>
+                <a href="https://s26.postimg.org/wbk6nbto9/design1_2.jpg">
+                    <img src="https://s26.postimg.org/wbk6nbto9/design1_2.jpg" style="cursor: pointer; display: block; height: 50%; margin-left: auto; margin-right: auto; width: 50%;" /><br />
+                </a>
+                <a href="https://s26.postimg.org/vajxy7cop/Design1_3.jpg">
+                    <img src="https://s26.postimg.org/vajxy7cop/Design1_3.jpg" style="cursor: pointer; display: block; height: 50%; margin-left: auto; margin-right: auto; width: 50%;" /><br />
+                </a>
+                <a href="https://s26.postimg.org/8adalveux/Design1_4.jpg">
+                    <img src="https://s26.postimg.org/8adalveux/Design1_4.jpg" style="cursor: pointer; display: block; height: 50%; margin-left: auto; margin-right: auto; width: 50%;" /><br />
+                </a>
+                <a href="https://s26.postimg.org/c80kba1o9/Design1_5.jpg">
+                    <img src="https://s26.postimg.org/c80kba1o9/Design1_5.jpg" style="cursor: pointer; display: block; height: 50%; margin-left: auto; margin-right: auto; width: 50%;" /><br />
+                </a>
+                <a href="https://s26.postimg.org/6l47dsz5l/Design1_6.jpg">
+                    <img src="https://s26.postimg.org/6l47dsz5l/Design1_6.jpg" style="cursor: pointer; display: block; height: 50%; margin-left: auto; margin-right: auto; width: 50%;" /><br />
+                </a>
+                <a href="https://s26.postimg.org/5cgbs677d/Design1_7.jpg">
+                    <img src="https://s26.postimg.org/5cgbs677d/Design1_7.jpg" style="cursor: pointer; display: block; height: 50%; margin-left: auto; margin-right: auto; width: 50%;" /><br /><br/><br/>
+                </a>
+
+                <strong>Alte design-uri propuse:</strong><br /><br />
+                <a href="https://s26.postimg.org/ezf8o5at5/design2.jpg">
+                    <img src="https://s26.postimg.org/ezf8o5at5/design2.jpg" style="cursor: pointer; display: block; height: 50%; margin-left: auto; margin-right: auto; width: 50%;" /><br /><br /><br />
+                </a>
+                <a href="https://s26.postimg.org/q0adt6321/design3.jpg">
+                    <img src="https://s26.postimg.org/q0adt6321/design3.jpg" style="cursor: pointer; display: block; height: 50%; margin-left: auto; margin-right: auto; width: 50%;" /><br /><br /><br />
+                </a>
+                <!--<a href=https://s26.postimg.org/g49atixa1/design4.jpg">
+                    <img src="https://s26.postimg.org/g49atixa1/design4.jpg" style="cursor: pointer; display: block; height: 50%; margin-left: auto; margin-right: auto; width: 50%;" /><br /><br /><br />
+                </a>-->
+                <a href="https://s26.postimg.org/7n9silsl5/design5.jpg">
+                    <img src="https://s26.postimg.org/7n9silsl5/design5.jpg" style="cursor: pointer; display: block; height: 50%; margin-left: auto; margin-right: auto; width: 50%;" /><br /><br /><br />
+                </a>
+                <a href="https://s26.postimg.org/8tdshegvt/design6.jpg">
+                    <img src="https://s26.postimg.org/8tdshegvt/design6.jpg" style="cursor: pointer; display: block; height: 50%; margin-left: auto; margin-right: auto; width: 50%;" /><br /><br /><br />
+                </a>
+            </div>
+</li>
+</ol>
+<ol start="7">
+<li>
+            <h3>
+                <strong>Progres</strong>
+            </h3>
+</li>
+<ul>
+<li>
+                Anghelache Oana: Realizare HTML+CSS, Realizarea modelului conceptual
+            </li>
+<li>
+                Redinciuc Daniel-Ilie: Realizare raport, Automat de stari, Model baza de date, CSS pentru CreateHobby.php(dezactivat temporar)
+            </li>
+<li>
+                Dorneanu Marina: Lucru raport, Moqups, Sugestii aranjare, Lucru html
+            </li>
+<li>
+                Moisa Oana-Maria: Moqups, Lucru css
+            </li>
+</ul>
+</ol>
+</body>
+</html>
